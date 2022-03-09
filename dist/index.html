@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Charging - Panel Monitor</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    
+</head>
+<body>
+    <h1 id="title" class="
+    text-lime-700 text-5xl
+    font-bold">Fast Charging - Panel Monitor</h1>
+</body>
+
+    <script src="/node_modules/socket.io/client-dist/socket.io.js"></script>
+    <script>
+        let socket = io();
+        socket.on('data', function(data){
+            console.log(data)
+            document.getElementById('title').innerHTML = data
+        })
+    </script>
+</html>

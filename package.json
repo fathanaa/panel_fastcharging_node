@@ -1,0 +1,22 @@
+{
+  "name": "panel_fastcharging_node",
+  "version": "1.0.0",
+  "description": "Panel Monitor for Fast Charging",
+  "main": "./src/index.js",
+  "scripts": {
+    "devstart" : "nodemon index.js"
+  },
+  "author": "Fathan Akbar A",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "nodemon": "^2.0.15",
+    "postcss": "^8.4.8",
+    "tailwindcss": "^3.0.23"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "serialport": "^10.4.0",
+    "socket.io": "^4.4.1"
+  }
+}
